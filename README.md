@@ -1,7 +1,7 @@
 # KRALR
 
 This is the code for the paper:
->Zhipeng Zhang, Yuhang Zhang, Tianyang Hao, Zuoqing Li, Yao Zhang, and Masahiro Inuiguchi(2023). Unearthing Undiscovered Interests: Knowledge Enhanced Representation Aggregation for Long-Tail Recommendation. In: Honda, K., Le, B., Huynh, VN., Inuiguchi, M., Kohda, Y. (eds) Integrated Uncertainty in Knowledge Modelling and Decision Making. IUKM 2023. Lecture Notes in Computer Science(), vol 14376. Springer, Cham. https://doi.org/10.1007/978-3-031-46781-3_9
+>Zhipeng Zhang, Yuhang Zhang, Tianyang Hao, Zuoqing Li, Yao Zhang, Masahiro Inuiguchi. Unearthing undiscovered interests: knowledge enhanced representation aggregation for long-tail recommendation[C]. Proceedings of the 10th International Conference on Integrated Uncertainty in Knowledge Modelling and Decision Making(IUKM), pp.91-103, Kanazawa, Japan, November 2-4, 2023. https://doi.org/10.1007/978-3-031-46781-3_9
 
 
 ## Introduction
@@ -15,10 +15,10 @@ If you want to use codes and datasets in your research, please contact the paper
                Tianyang Hao and
                Zuoqing Li and
                Yao Zhang and
-               Masahiro Inuiguchi,
+               Masahiro Inuiguchi
   title     = {Unearthing Undiscovered Interests: Knowledge Enhanced Representation Aggregation for Long-Tail Recommendation},
   booktitle = {{IUKM2023}},
-  pages     = {91–-103},
+  pages     = {91-103},
   year      = {2023}
 }
 ```
