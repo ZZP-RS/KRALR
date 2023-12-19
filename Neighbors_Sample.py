@@ -7,8 +7,8 @@ num_path = 1500
 path_len = 5
 sample_num_path = 3
 
-file_path = 'datasets/last-fm'
-save_path = 'datasets/last-fm'
+file_path = 'datasets/ml-1m'
+save_path = 'datasets/ml-1m'
 train_file = file_path + '/train.txt'
 test_file = file_path + '/test.txt'
 kg_file = file_path + '/kg_final.txt'
@@ -97,8 +97,8 @@ def _load_kg(file_name):
 
     return kg_dict,reverse_kg_dict
 
-def _get_neighbor(id,dict):
-    neighbor_id_list = dict[id]
+def _get_neighbor(id, node_dict):
+    neighbor_id_list = node_dict[id]
     idx = random.randint(0,len(neighbor_id_list)-1)
     return neighbor_id_list[idx]
 
@@ -125,7 +125,10 @@ for target_user_id in exist_users:
         path.append(_get_neighbor(target_user_id, train_user_dict))
         for j in range(path_len-1):
             id = path[len(path) - 1]
-            entity_id = _get_neighbor(id,kg_dict)
+            if id in kg_dict.keys():
+                entity_id = _get_neighbor(id,kg_dict)
+            else:
+                continue
             path.append(entity_id)
         if path not in path_list:
             path_list.append(path)

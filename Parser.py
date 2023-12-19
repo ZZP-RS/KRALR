@@ -7,7 +7,7 @@ def parse_args():
     parser.add_argument("--seed", type=int, default=2023, help="random seed.")
 
     # nargs=?，如果没有在命令行中出现对应的项，则给对应的项赋值为default。
-    parser.add_argument("--dataset", nargs="?", default="last-fm",
+    parser.add_argument("--dataset", nargs="?", default="yelp2018",
                         help="choose a dataset from {last-fm,amazon-book,yelp2018}")
     parser.add_argument("--dataset_dir", nargs="?", default="datasets", help="datasets path")
 
@@ -42,14 +42,14 @@ def parse_args():
                         help='Lambda when calculating CF l2 loss.')
 
     parser.add_argument("--lr", type=float, default=0.0001, help="learning rate")
-    parser.add_argument("--n_epoch", type=int, default=1000, help="Maximum of epoch")
+    parser.add_argument("--n_epoch", type=int, default=10000, help="Maximum of epoch")
     parser.add_argument("--stopping_steps", type=int, default=10, help="number of epoch for early stopping")
 
     parser.add_argument('--cf_print_every', type=int, default=1,
                         help='Iter interval of printing CF loss.')
     parser.add_argument('--kg_print_every', type=int, default=1,
                         help='Iter interval of printing KG loss.')
-    parser.add_argument('--evaluate_every', type=int, default=1,
+    parser.add_argument('--evaluate_every', type=int, default=10,
                         help='Epoch interval of evaluating CF.')
 
     parser.add_argument('--Ks', nargs='?', default='[20, 40, 60, 80, 100]',
