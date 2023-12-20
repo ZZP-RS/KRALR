@@ -50,7 +50,7 @@ The code has been tested running under Python 3.7.10. The required packages are 
 ## 5. datasets
 We provided two datasets to validate KRALR: last-fm and ml-1m,  The following table shows the interaction information of last-fm  and ml-1m :
 
-|  Interaction Graph   |    last-fm     |  ml-1m  |
+|  Interaction Datasets   |    last-fm     |  ml-1m  |
 |  :---------------:   |:--------------:|:-------:|
 |       n_users        |     23566      |  6040   |
 |       n_items        |     48123      |  3655   |
