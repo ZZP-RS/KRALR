@@ -1,27 +1,30 @@
 # KRALR
 
 This is the code for the paper:
->Zhipeng Zhang, Yuhang Zhang, Tianyang Hao, Zuoqing Li, Yao Zhang, Masahiro Inuiguchi. Unearthing undiscovered interests: knowledge enhanced representation aggregation for long-tail recommendation[C]. Proceedings of the 10th International Conference on Integrated Uncertainty in Knowledge Modelling and Decision Making(IUKM), pp.91-103, Kanazawa, Japan, November 2-4, 2023. https://doi.org/10.1007/978-3-031-46781-3_9
+>Zhipeng Zhang, Yuhang Zhang, Tianyang Hao, Zuoqing Li, Yao Zhang, Masahiro Inuiguchi. Unearthing undiscovered interests: knowledge enhanced representation aggregation for long-tail recommendation[C]. Proceedings of the 10th International Conference on Integrated Uncertainty in Knowledge Modelling and Decision Making(IUKM), pp.91-103, Kanazawa, Japan, November 2-4, 2023. https://doi.org/10.1007/978-3-031-46781-3_9.
+In this paper, we only utilized Last-FM to evaluate our proposed approach.
+>Also for the speical issue of IUKM2023 in Annals of Operations Research. KRALR: knowledge enhanced representation aggregation for long-tail recommendation.
 
 
 ## 1. Introduction
-KRALR discovers users' long tail interests through random walks and enhances the quality of long tail items by constructing co-occurrence graphs
+KRALR can recommend long-tail items to users as many as possible while maintaining the recommendation accuracy. First, KRALR utilizes a user long-tail interests representation aggregation to capture the long-tail interests of the target users by employing random walks on knowledge graph under item popularity constraints.
+Next, KRALR employs a long-tail item representation aggregation to enhance the representation quality of long-tail items by constructing a co-occurence graph and integrating it with knowledge graph. Finally, KRALR calculate the prediction scores for non-interacted items and recommend top $N$ with highest prediction scores for target users.
 
-If you want to use codes and datasets in your research, please contact the paper authors and cite the following paper as the reference:
-```
-@inproceedings{KRALR,
-  author    = {Zhipeng Zhang and
-               Yuhang Zhang and
-               Tianyang Hao and
-               Zuoqing Li and
-               Yao Zhang and
-               Masahiro Inuiguchi
-  title     = {Unearthing Undiscovered Interests: Knowledge Enhanced Representation Aggregation for Long-Tail Recommendation},
-  booktitle = {{IUKM2023}},
-  pages     = {91-103},
-  year      = {2023}
-}
-```
+%If you want to use codes and datasets in your research, please contact the paper authors and cite the following paper as the reference:
+%```
+%@inproceedings{KRALR,
+%  author    = {Zhipeng Zhang and
+%               Yuhang Zhang and
+%               Tianyang Hao and
+%               Zuoqing Li and
+%               Yao Zhang and
+%               Masahiro Inuiguchi
+%  title     = {Unearthing Undiscovered Interests: Knowledge Enhanced Representation Aggregation for Long-Tail Recommendation},
+%  booktitle = {{IUKM2023}},
+%  pages     = {91-103},
+%  year      = {2023}
+%}
+%```
 
 
 ## 2. Environment Requirement
@@ -70,11 +73,11 @@ We provided two datasets to validate KRALR: last-fm and ml-1m,  The following ta
  Besides the user-item interactions, we need to construct item knowledge for each dataset. For last-fm, we mapped items to Microsoft Satori entities. For ml-1m, we employed Freebase to map movies in MovieLens1M to construct KG.
 The following table shows the KG information of last-fm  and ml-1m :
 
-| Knowledge Graph |   last-fm   |  ml-1m  |
-|:---------------:|:-----------:|:-------:|
-|   n_entities    |   106389    | 398505  |
-|   n_relations   |      9      |   57    |
-|    n_triples    |   464567    | 3396595 |
+| Knowledge Graph |   Microsoft Satori (last-fm)   |  Freebase(ml-1m)  |
+|:---------------:|          :-----------:         |     :-------:     |
+|   n_entities    |              106389            |       398505      |
+|   n_relations   |                 9              |         57        |
+|    n_triples    |              464567            |       3396595     |
 
 
 
