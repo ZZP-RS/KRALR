@@ -18,7 +18,7 @@ class DataLoader(object):
 
         # datasets\last-fm
         self.data_dir = os.path.join(args.dataset_dir, args.dataset)
-        self.train_dir = os.path.join(self.data_dir, 'trainCKG.txt')
+        self.train_dir = os.path.join(self.data_dir, 'train.txt')
         self.train_dir2 = os.path.join(self.data_dir, 'train.txt')
         self.test_dir = os.path.join(self.data_dir, 'test.txt')
         self.kg_dir = os.path.join(self.data_dir, 'kg_final2.txt')
@@ -240,7 +240,7 @@ class DataLoader(object):
         return torch.sparse.FloatTensor(i, v, torch.Size(shape))
 
     def generate_cf_batch(self, user_dict, user_dict2, batch_size):
-        exist_users = user_dict.keys()
+        exist_users = list(user_dict.keys())
         if batch_size <= len(exist_users):
             batch_user = random.sample(exist_users, batch_size)
         else:
