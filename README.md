@@ -52,18 +52,18 @@ We provided two datasets to validate KRALR: last-fm and ml-1m,  The following ta
 
 |  Interaction Datasets   |    last-fm     |  ml-1m  |
 |  :---------------:   |:--------------:|:-------:|
-|       n_users        |     23566      |  6040   |
-|       n_items        |     48123      |  3655   |
-|    n_interactions    |    3034796     | 997579  |
+|       #users        |     23566      |  6040   |
+|       #items        |     48123      |  3655   |
+|    #interactions    |    3034796     | 997579  |
 
  Besides the user-item interactions, we need to construct item knowledge for each dataset. For last-fm, we mapped items to Microsoft Satori entities. For ml-1m, we employed Freebase to map movies in MovieLens1M to construct KG.
 The following table shows the KG information of last-fm  and ml-1m :
 
 | Knowledge Graph |   Microsoft Satori (last-fm)   |  Freebase(ml-1m)  |
 |:---------------:|          :-----------:         |     :-------:     |
-|   n_entities    |              106389            |       398505      |
-|   n_relations   |                 9              |         57        |
-|    n_triples    |              464567            |       3396595     |
+|   #entities    |              106389            |       398505      |
+|   #relations   |                 9              |         57        |
+|    #triples    |              464567            |       3396595     |
 
 
 
