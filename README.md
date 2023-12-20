@@ -50,11 +50,11 @@ The code has been tested running under Python 3.7.10. The required packages are 
 ## 5. datasets
 We provided two datasets to validate KRALR: last-fm and ml-1m,  The following table shows the interaction information of last-fm  and ml-1m :
 
-|  Interactions   |    last-fm     |  ml-1m  |
-|:---------------:|:--------------:|:-------:|
-|     n_users     |     23566      |  6040   |
-|     n_items     |     48123      |  3655   |
-| n_interactions  |    3034796     | 997579  |
+|  Interaction Graph   |    last-fm     |  ml-1m  |
+|  :---------------:   |:--------------:|:-------:|
+|       n_users        |     23566      |  6040   |
+|       n_items        |     48123      |  3655   |
+|    n_interactions    |    3034796     | 997579  |
 
  Besides the user-item interactions, we need to construct item knowledge for each dataset. For last-fm, we mapped items to Microsoft Satori entities. For ml-1m, we employed Freebase to map movies in MovieLens1M to construct KG.
 The following table shows the KG information of last-fm  and ml-1m :
