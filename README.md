@@ -48,7 +48,12 @@ The code has been tested running under Python 3.7.10. The required packages are 
 
 
 ## 5. datasets
-We provided two datasets to validate KRALR: last-fm and ml-1m,  The following table shows the interaction information of last-fm  and ml-1m :
+We provided two datasets to validate KRALR: last-fm and ml-1m. 
+
+In the Last.fm dataset, we provide a pretrain file, which can be utilized by setting --use_pretrain 1. Additionally, you have the option to employ your own pretrain file by modifying the load_pretrained_data function in the data_loader.py file.
+
+The following table shows the interaction information of last-fm  and ml-1m :
+
 
 |  Interaction Datasets   |    last-fm     |  ml-1m  |
 |  :---------------:   |:--------------:|:-------:|
