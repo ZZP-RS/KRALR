@@ -61,10 +61,10 @@ The following table shows the interaction information of last-fm  and ml-1m :
 |       #items        |     48123      |  3655   |
 |    #interactions    |    3034796     | 997579  |
 
- Besides the user-item interactions, we need to construct item knowledge for each dataset. For last-fm, we mapped items to Microsoft Satori entities. For ml-1m, we employed Freebase to map movies in MovieLens1M to construct KG.
-The following table shows the KG information of last-fm  and ml-1m :
+ Besides the user-item interactions, we need to construct item knowledge for each dataset. For last-fm, we mapped items to Freebase entities. For ml-1m, we employed Freebase to map movies in MovieLens1M to construct KG.
+The following table shows the KG information of last-fm and ml-1m :
 
-| Knowledge Graph |   Microsoft Satori (last-fm)   |  Freebase(ml-1m)  |
+| Knowledge Graph |   Freebase(last-fm)   |  Freebase(ml-1m)  |
 |:---------------:|          :-----------:         |     :-------:     |
 |   #entities    |              58266            |       398505      |
 |   #relations   |                 9              |         57        |
