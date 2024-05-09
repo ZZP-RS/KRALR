@@ -66,7 +66,7 @@ The following table shows the KG information of last-fm  and ml-1m :
 
 | Knowledge Graph |   Microsoft Satori (last-fm)   |  Freebase(ml-1m)  |
 |:---------------:|          :-----------:         |     :-------:     |
-|   #entities    |              106389            |       398505      |
+|   #entities    |              58266            |       398505      |
 |   #relations   |                 9              |         57        |
 |    #triples    |              464567            |       3396595     |
 
