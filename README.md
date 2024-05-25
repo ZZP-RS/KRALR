@@ -9,8 +9,7 @@ Also for the speical issue of IUKM2023 in Annals of Operations Research:
 
 
 ## 1. Introduction
-KRALR can recommend long-tail items to users as many as possible while maintaining the recommendation accuracy. Firstly, KRALR utilizes a user long-tail interests representation aggregation to capture the long-tail interests of the target users by employing random walks on knowledge graph under item popularity constraints.
-Next, KRALR employs a long-tail item representation aggregation to enhance the representation quality of long-tail items by constructing a co-occurence graph and integrating it with knowledge graph. Finally, KRALR calculate the prediction scores for non-interacted items and recommend top $N$ with highest prediction scores for target users.
+KRALR can recommend long-tail items to users as many as possible while maintaining the recommendation accuracy.
 
 
 ## 2. Environment Requirement
