@@ -1,11 +1,11 @@
 # KRALR
 
 This is the code for the paper:
->Zhipeng Zhang, Yuhang Zhang, Tianyang Hao, Zuoqing Li, Yao Zhang, Masahiro Inuiguchi. Unearthing undiscovered interests: knowledge enhanced representation aggregation for long-tail recommendation[C]. Proceedings of the 10th International Conference on Integrated Uncertainty in Knowledge Modelling and Decision Making(IUKM), pp.91-103, Kanazawa, Japan, November 2-4, 2023. https://doi.org/10.1007/978-3-031-46781-3_9.
+>Zhipeng Zhang, et al. Unearthing undiscovered interests: knowledge enhanced representation aggregation for long-tail recommendation[C]. Proceedings of the 10th International Conference on Integrated Uncertainty in Knowledge Modelling and Decision Making(IUKM), pp.91-103, Kanazawa, Japan, November 2-4, 2023. https://doi.org/10.1007/978-3-031-46781-3_9.
 In this paper, we only utilized Last-FM to evaluate our proposed approach.
 >
 Also for the speical issue of IUKM2023 in Annals of Operations Research:
->KRALR: knowledge enhanced representation aggregation for long-tail recommendation[J]. Annals of Operations Research, Under Review.
+>Zhipeng Zhang, et al. KRALR: knowledge enhanced representation aggregation for long-tail recommendation[J]. Annals of Operations Research, Under Review.
 
 
 ## 1. Introduction
