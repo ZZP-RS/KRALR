@@ -40,11 +40,11 @@ The code has been tested running under Python 3.7.10. The required packages are 
 2. Run code 'python main_KRALR.py' to start KRALR-IRA
 
 ## 4. datasets
-We provided three datasets to validate KRALR: last-fm, ml-1m, and amazon-book. 
+We provided three datasets to validate KRALR: last-fm, movielens-1m, and amazon-book. 
 
 The following table shows the interaction information of three datasets:
 
-|  Interaction Datasets   |    last-fm     |  ml-1m  | amazon-book|
+|  Interaction Datasets   |    last-fm     |  movielens-1m  | amazon-book|
 |  :---------------:   |:--------------:|:-------:|:-------:|
 |       #users        |     23566      |  6040   |  70679  |
 |       #items        |     48123      |  3655   |  24915  |
@@ -52,7 +52,7 @@ The following table shows the interaction information of three datasets:
 
 The following table shows the KG information of three datasets:
 
-| Knowledge Graph |   Freebase(last-fm)   |  Freebase(ml-1m)  | Freebase(amazon-book)  | 
+| Knowledge Graph |   Freebase(last-fm)   |  Freebase(movielens-1m)  | Freebase(amazon-book)  | 
 |:---------------:|          :-----------:         |     :-------:     |:-------:     |
 |   #entities    |              58266            |       398505      |  88572  |
 |   #relations   |                 9              |         57        |  39   |
