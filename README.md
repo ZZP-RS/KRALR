@@ -1,12 +1,5 @@
 # KRALR
 
-This is the code for the paper:
->Zhipeng Zhang, et al. Unearthing undiscovered interests: knowledge enhanced representation aggregation for long-tail recommendation[C]. Proceedings of the 10th International Conference on Integrated Uncertainty in Knowledge Modelling and Decision Making(IUKM), pp.91-103, Kanazawa, Japan, November 2-4, 2023. https://doi.org/10.1007/978-3-031-46781-3_9.
->
-Also for the speical issue of IUKM2023 in Annals of Operations Research:
->Zhipeng Zhang, et al. KRALR: knowledge enhanced representation aggregation for long-tail recommendation[J]. Annals of Operations Research, Under Review.
-
-
 ## 1. Environment Requirement
 ```
 The code has been tested running under Python 3.7.10. The required packages are as follows:
